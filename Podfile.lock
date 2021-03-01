@@ -1,0 +1,16 @@
+PODS:
+  - DeliciousPubSub (1.1.0)
+
+DEPENDENCIES:
+  - DeliciousPubSub (~> 1.1)
+
+SPEC REPOS:
+  trunk:
+    - DeliciousPubSub
+
+SPEC CHECKSUMS:
+  DeliciousPubSub: e34c6ca084b42f9a875556c4c60749f7004f9435
+
+PODFILE CHECKSUM: 8ab224d0d2ab22f22452c95a9cb51d2602b0c65e
+
+COCOAPODS: 1.10.0

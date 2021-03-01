@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17511" systemVersion="20B29" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Candidate" representedClassName="Candidate" syncable="YES" codeGenerationType="class">
+        <attribute name="age" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="representativeOf" optional="YES" attributeType="String"/>
+        <attribute name="totalVotes" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="township" optional="YES" attributeType="String"/>
+        <relationship name="voters" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Voter" inverseName="newRelationship" inverseEntity="Voter"/>
+    </entity>
+    <entity name="Voter" representedClassName="Voter" syncable="YES" codeGenerationType="class">
+        <attribute name="age" optional="YES" attributeType="Integer 64" defaultValueString="18" usesScalarValueType="YES"/>
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="newRelationship" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Candidate" inverseName="voters" inverseEntity="Candidate"/>
+    </entity>
+    <elements>
+        <element name="Candidate" positionX="167.5067749023438" positionY="-38.86654663085938" width="128" height="133"/>
+        <element name="Voter" positionX="-28.27691650390625" positionY="-32.7237548828125" width="128" height="103"/>
+    </elements>
+</model>
